@@ -19,13 +19,11 @@ app:
 
 git_merge:
 	$(MAKE) clean
-	$(MAKE) lint
 	@python mood_messenger/automation/git_merge.py
 	@echo "👍 Git Merge (master) successfull!"
 
 git_push:
 	$(MAKE) clean
-	$(MAKE) lint
 	@python mood_messenger/automation/git_push.py
 	@echo "👍 Git Push (branch) successfull!"
 

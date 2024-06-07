@@ -11,8 +11,8 @@ from nlpretext.basic.preprocess import (
 from nlpretext.social.preprocess import remove_mentions, remove_hashtag, remove_emoji
 
 
-
 # = Decorators =========================================================================================================
+
 
 def time_it(func):
     def wrapper(*args, **kwargs):
@@ -31,14 +31,15 @@ def time_it(func):
 
 # Universal functions ==================================================================================================
 
+
 def text_preprocessing_nlpretext(text):
-    '''
+    """
     Text pre-prcessing for NLP use with NLPretext
     Hash out the functions not needed.
-    
+
     Suggested use: (skips empty rows)
     # data["text_column"] = data["text_column"].apply(lambda x: text_preprocessing(str(x)) if not pd.isna(x) else np.nan)
-    '''
+    """
     logger.info("⭐️ Text Preprocesssing with *NLPretext")
 
     preprocessor = Preprocessor()
@@ -53,4 +54,3 @@ def text_preprocessing_nlpretext(text):
     text = preprocessor.run(text)
 
     return text
-

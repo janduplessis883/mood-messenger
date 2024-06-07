@@ -9,22 +9,5 @@ from mood_messenger.utils import *
 from mood_messenger.automation.git_merge import *
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 if __name__ == "__main__":
     pass
